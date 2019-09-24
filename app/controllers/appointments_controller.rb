@@ -4,6 +4,6 @@ class AppointmentsController < ApplicationController
   end
 
   def index
-    raise ActionController::RoutingError
+    raise ActionController::RoutingError.new "Access Prohibited"
   end
 end
